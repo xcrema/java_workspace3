@@ -62,7 +62,7 @@ public class Solution {
 		printTop(root, 0, 0, map);
 		
 		for(Pair<Integer, Integer> it:map.values()) {
-			System.out.println(it.first+" ");
+			System.out.print(it.first+" ");
 		}
 	}
 
