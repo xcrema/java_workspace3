@@ -57,7 +57,7 @@ public class Solution {
 
 	class subset{
 		int parent, rank;
-	};
+	}
 	
 	private void KrushkalMST() {
 		// TODO Auto-generated method stub
@@ -69,5 +69,28 @@ public class Solution {
 		
 		Arrays.sort(edge);
 		
+		subset subsets[] = new subset[V];
+		for(i=0; i<V; i++)
+			subsets[i] = new subset();
+		
+		for(int v=0; v<V; v++) {
+			subsets[v].parent = v;
+			subsets[v].rank = 0;
+		}
+		
+		i = 0;
+		
+		while(e<V-1) {
+			Edge next_edge = new Edge();
+			next_edge = edge[i++];
+			
+			int x = find(subsets, next_edge.src);
+			
+		}
+	}
+
+	private int find(subset[] subsets, int src) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
